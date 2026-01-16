@@ -11,15 +11,6 @@ services:
     volumes:
       - sqlserver_data:/var/opt/mssql
 
-  authservice:
-    build:
-      context: ./src/Services/AuthService/AuthService
-      dockerfile: Dockerfile
-    ports:
-      - "5001:80"
-    depends_on:
-      - sqlserver
-
   userservice:
     build:
       context: ./src/Services/UserService/UserService
