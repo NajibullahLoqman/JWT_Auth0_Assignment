@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      ACCEPT_EULA: Y
+      SA_PASSWORD: 123456
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+
+  authservice:
+    build:
+      context: ./src/Services/AuthService/AuthService
+      dockerfile: Dockerfile
+    ports:
+      - "5001:80"
+    depends_on:
+      - sqlserver
+
+  userservice:
+    build:
+      context: ./src/Services/UserService/UserService
+      dockerfile: Dockerfile
+    ports:
+      - "5002:80"
+    depends_on:
+      - sqlserver
+
+  productservice:
+    build:
+      context: ./src/Services/ProductService/ProductService
+      dockerfile: Dockerfile
+    ports:
+      - "5003:80"
+    depends_on:
+      - sqlserver
+
+volumes:
+  sqlserver_data:
