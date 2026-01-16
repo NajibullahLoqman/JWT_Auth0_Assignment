@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\JWT_Auth0_Ass\\src\\Services\\UserService\\UserService\\UserService.csproj": {}
+    "D:\\JWT_Auth0_Assignment\\src\\Services\\UserService\\UserService\\UserService.csproj": {}
   },
   "projects": {
-    "D:\\JWT_Auth0_Ass\\src\\Services\\UserService\\UserService\\UserService.csproj": {
+    "D:\\JWT_Auth0_Assignment\\src\\Services\\UserService\\UserService\\UserService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\JWT_Auth0_Ass\\src\\Services\\UserService\\UserService\\UserService.csproj",
+        "projectUniqueName": "D:\\JWT_Auth0_Assignment\\src\\Services\\UserService\\UserService\\UserService.csproj",
         "projectName": "UserService",
-        "projectPath": "D:\\JWT_Auth0_Ass\\src\\Services\\UserService\\UserService\\UserService.csproj",
+        "projectPath": "D:\\JWT_Auth0_Assignment\\src\\Services\\UserService\\UserService\\UserService.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\JWT_Auth0_Ass\\src\\Services\\UserService\\UserService\\obj\\",
+        "outputPath": "D:\\JWT_Auth0_Assignment\\src\\Services\\UserService\\UserService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
