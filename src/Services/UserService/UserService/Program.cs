@@ -41,6 +41,3 @@ app.MapControllers();
 
 app.MapGet("/health", () => "UserService is running!")
     .WithName("HealthCheck");
-
-app.MapGet("/health", () => "UserService is running!")
-    .WithName("HealthCheck");
